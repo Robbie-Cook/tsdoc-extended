@@ -16,7 +16,7 @@
 			"originalName": "/Users/Robbie/Repos/tsdoc-extended/src/index.ts",
 			"children": [
 				{
-					"id": 2,
+					"id": 21,
 					"name": "TsDocExtended",
 					"kind": 128,
 					"kindString": "Class",
@@ -28,7 +28,7 @@
 					},
 					"children": [
 						{
-							"id": 3,
+							"id": 30,
 							"name": "generateMarkdown",
 							"kind": 2048,
 							"kindString": "Method",
@@ -38,7 +38,7 @@
 							},
 							"signatures": [
 								{
-									"id": 4,
+									"id": 31,
 									"name": "generateMarkdown",
 									"kind": 4096,
 									"kindString": "Call signature",
@@ -56,7 +56,7 @@
 									},
 									"parameters": [
 										{
-											"id": 5,
+											"id": 32,
 											"name": "srcDir",
 											"kind": 32768,
 											"kindString": "Parameter",
@@ -70,7 +70,7 @@
 											"defaultValue": "\"src\""
 										},
 										{
-											"id": 6,
+											"id": 33,
 											"name": "ignoredModules",
 											"kind": 32768,
 											"kindString": "Parameter",
@@ -99,8 +99,183 @@
 							"sources": [
 								{
 									"fileName": "index.ts",
-									"line": 23,
+									"line": 129,
 									"character": 25
+								}
+							]
+						},
+						{
+							"id": 22,
+							"name": "getComments",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isPrivate": true,
+								"isStatic": true,
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 23,
+									"name": "getComments",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {
+										"shortText": "Get comments from an item"
+									},
+									"parameters": [
+										{
+											"id": 24,
+											"name": "item",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExported": true
+											},
+											"type": {
+												"type": "union",
+												"types": [
+													{
+														"type": "reference",
+														"id": 9,
+														"name": "Item"
+													},
+													{
+														"type": "reference",
+														"typeArguments": [
+															{
+																"type": "reference",
+																"id": 9,
+																"name": "Item"
+															}
+														],
+														"name": "Partial"
+													}
+												]
+											}
+										}
+									],
+									"type": {
+										"type": "reference",
+										"typeArguments": [
+											{
+												"type": "intrinsic",
+												"name": "string"
+											}
+										],
+										"name": "Array"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "index.ts",
+									"line": 44,
+									"character": 28
+								}
+							]
+						},
+						{
+							"id": 25,
+							"name": "processChildren",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isPrivate": true,
+								"isStatic": true,
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 26,
+									"name": "processChildren",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {
+										"shortText": "Process the children of an item"
+									},
+									"parameters": [
+										{
+											"id": 27,
+											"name": "item",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExported": true
+											},
+											"type": {
+												"type": "reference",
+												"id": 9,
+												"name": "Item"
+											}
+										},
+										{
+											"id": 28,
+											"name": "ignoredModules",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExported": true,
+												"isOptional": true
+											},
+											"type": {
+												"type": "reference",
+												"typeArguments": [
+													{
+														"type": "intrinsic",
+														"name": "string"
+													}
+												],
+												"name": "Array"
+											}
+										},
+										{
+											"id": 29,
+											"name": "depth",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExported": true
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											},
+											"defaultValue": "0"
+										}
+									],
+									"type": {
+										"type": "union",
+										"types": [
+											{
+												"type": "reference",
+												"typeArguments": [
+													{
+														"type": "intrinsic",
+														"name": "string"
+													}
+												],
+												"name": "Array"
+											},
+											{
+												"type": "intrinsic",
+												"name": "null"
+											}
+										]
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "index.ts",
+									"line": 72,
+									"character": 32
 								}
 							]
 						}
@@ -110,34 +285,471 @@
 							"title": "Methods",
 							"kind": 2048,
 							"children": [
-								3
+								30,
+								22,
+								25
 							]
 						}
 					],
 					"sources": [
 						{
 							"fileName": "index.ts",
-							"line": 17,
+							"line": 40,
 							"character": 34
 						}
 					]
 				},
 				{
-					"id": 7,
+					"id": 2,
+					"name": "Comment",
+					"kind": 256,
+					"kindString": "Interface",
+					"flags": {},
+					"children": [
+						{
+							"id": 3,
+							"name": "shortText",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "index.ts",
+									"line": 7,
+									"character": 11
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						},
+						{
+							"id": 5,
+							"name": "tags",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "index.ts",
+									"line": 9,
+									"character": 6
+								}
+							],
+							"type": {
+								"type": "reference",
+								"typeArguments": [
+									{
+										"type": "reflection",
+										"declaration": {
+											"id": 6,
+											"name": "__type",
+											"kind": 65536,
+											"kindString": "Type literal",
+											"flags": {},
+											"children": [
+												{
+													"id": 7,
+													"name": "tag",
+													"kind": 32,
+													"kindString": "Variable",
+													"flags": {},
+													"sources": [
+														{
+															"fileName": "index.ts",
+															"line": 10,
+															"character": 7
+														}
+													],
+													"type": {
+														"type": "intrinsic",
+														"name": "string"
+													}
+												},
+												{
+													"id": 8,
+													"name": "text",
+													"kind": 32,
+													"kindString": "Variable",
+													"flags": {},
+													"sources": [
+														{
+															"fileName": "index.ts",
+															"line": 11,
+															"character": 8
+														}
+													],
+													"type": {
+														"type": "intrinsic",
+														"name": "string"
+													}
+												}
+											],
+											"groups": [
+												{
+													"title": "Variables",
+													"kind": 32,
+													"children": [
+														7,
+														8
+													]
+												}
+											],
+											"sources": [
+												{
+													"fileName": "index.ts",
+													"line": 9,
+													"character": 15
+												}
+											]
+										}
+									}
+								],
+								"name": "Array"
+							}
+						},
+						{
+							"id": 4,
+							"name": "text",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "index.ts",
+									"line": 8,
+									"character": 6
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						}
+					],
+					"groups": [
+						{
+							"title": "Properties",
+							"kind": 1024,
+							"children": [
+								3,
+								5,
+								4
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "index.ts",
+							"line": 6,
+							"character": 17
+						}
+					]
+				},
+				{
+					"id": 9,
+					"name": "Item",
+					"kind": 256,
+					"kindString": "Interface",
+					"flags": {},
+					"children": [
+						{
+							"id": 18,
+							"name": "children",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "index.ts",
+									"line": 24,
+									"character": 10
+								}
+							],
+							"type": {
+								"type": "array",
+								"elementType": {
+									"type": "reference",
+									"id": 9,
+									"name": "Item"
+								}
+							}
+						},
+						{
+							"id": 20,
+							"name": "comment",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "index.ts",
+									"line": 26,
+									"character": 9
+								}
+							],
+							"type": {
+								"type": "reference",
+								"id": 2,
+								"name": "Comment"
+							}
+						},
+						{
+							"id": 14,
+							"name": "flags",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "index.ts",
+									"line": 20,
+									"character": 7
+								}
+							],
+							"type": {
+								"type": "union",
+								"types": [
+									{
+										"type": "intrinsic",
+										"name": "undefined"
+									},
+									{
+										"type": "reflection",
+										"declaration": {
+											"id": 15,
+											"name": "__type",
+											"kind": 65536,
+											"kindString": "Type literal",
+											"flags": {},
+											"children": [
+												{
+													"id": 16,
+													"name": "isExported",
+													"kind": 32,
+													"kindString": "Variable",
+													"flags": {},
+													"sources": [
+														{
+															"fileName": "index.ts",
+															"line": 21,
+															"character": 14
+														}
+													],
+													"type": {
+														"type": "intrinsic",
+														"name": "true"
+													}
+												}
+											],
+											"groups": [
+												{
+													"title": "Variables",
+													"kind": 32,
+													"children": [
+														16
+													]
+												}
+											]
+										}
+									}
+								]
+							}
+						},
+						{
+							"id": 10,
+							"name": "id",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "index.ts",
+									"line": 16,
+									"character": 4
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						},
+						{
+							"id": 12,
+							"name": "kind",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "index.ts",
+									"line": 18,
+									"character": 6
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						},
+						{
+							"id": 13,
+							"name": "kindString",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "index.ts",
+									"line": 19,
+									"character": 12
+								}
+							],
+							"type": {
+								"type": "union",
+								"types": [
+									{
+										"type": "intrinsic",
+										"name": "undefined"
+									},
+									{
+										"type": "intrinsic",
+										"name": "string"
+									}
+								]
+							}
+						},
+						{
+							"id": 11,
+							"name": "name",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "index.ts",
+									"line": 17,
+									"character": 6
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						},
+						{
+							"id": 17,
+							"name": "originalName",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "index.ts",
+									"line": 23,
+									"character": 14
+								}
+							],
+							"type": {
+								"type": "union",
+								"types": [
+									{
+										"type": "intrinsic",
+										"name": "undefined"
+									},
+									{
+										"type": "intrinsic",
+										"name": "string"
+									}
+								]
+							}
+						},
+						{
+							"id": 19,
+							"name": "signatures",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "index.ts",
+									"line": 25,
+									"character": 12
+								}
+							],
+							"type": {
+								"type": "reference",
+								"typeArguments": [
+									{
+										"type": "reference",
+										"typeArguments": [
+											{
+												"type": "reference",
+												"id": 9,
+												"name": "Item"
+											}
+										],
+										"name": "Partial"
+									}
+								],
+								"name": "Array"
+							}
+						}
+					],
+					"groups": [
+						{
+							"title": "Properties",
+							"kind": 1024,
+							"children": [
+								18,
+								20,
+								14,
+								10,
+								12,
+								13,
+								11,
+								17,
+								19
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "index.ts",
+							"line": 15,
+							"character": 14
+						}
+					]
+				},
+				{
+					"id": 34,
 					"name": "toCapitalCase",
 					"kind": 64,
 					"kindString": "Function",
 					"flags": {},
 					"signatures": [
 						{
-							"id": 8,
+							"id": 35,
 							"name": "toCapitalCase",
 							"kind": 4096,
 							"kindString": "Call signature",
 							"flags": {},
 							"parameters": [
 								{
-									"id": 9,
+									"id": 36,
 									"name": "str",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -157,7 +769,7 @@
 					"sources": [
 						{
 							"fileName": "index.ts",
-							"line": 7,
+							"line": 30,
 							"character": 22
 						}
 					]
@@ -168,14 +780,22 @@
 					"title": "Classes",
 					"kind": 128,
 					"children": [
-						2
+						21
+					]
+				},
+				{
+					"title": "Interfaces",
+					"kind": 256,
+					"children": [
+						2,
+						9
 					]
 				},
 				{
 					"title": "Functions",
 					"kind": 64,
 					"children": [
-						7
+						34
 					]
 				}
 			],

@@ -4,10 +4,10 @@
   "description": "A package that extends tsdoc",
   "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "npm run docs",
     "start": "tsc --watch",
     "build": "tsc",
-    "docs": "md-magic",
+    "docs": "npm run build && md-magic",
     "prepublishOnly": "npm run build && npm run docs"
   },
   "repository": {
