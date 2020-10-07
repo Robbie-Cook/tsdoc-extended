@@ -35,7 +35,7 @@ export default class TsDocExtended {
     let stringItems: string[] = [];
     data.children.forEach((item: { name: string; children: any[] }) => {
       if (!(ignoredModules && item.name.replace(/"/g, "") in ignoredModules)) {
-        item.children.forEach((child) => {
+        item.children?.forEach((child) => {
           const name = child.name.replace(/"/g, "");
           if (child.comment && !child.name.includes("Props")) {
             stringItems.push(`* **${name}**`);
